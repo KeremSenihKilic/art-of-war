@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Poppins:wght@200;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'poppins';
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 50px;
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.26);
+
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(4.5px);
+-webkit-backdrop-filter: blur(4.5px);
+border: 2px solid rgba(255, 255, 255, 0.44);
+
+}
+#header ul{
+display: flex;
+gap: 40px;
+
+}
+
+#header img{
+    width: 150px;
+}
+
+#header ul a{
+    text-decoration: none;
+    color: white;
+    transition: all 0.6s;
+}
+
+
+
+#header ul a:hover{
+  color: rgb(52, 38, 38);
+  text-shadow: 0px 0px 10px white;
+}
+
+
+/* karsilama alani*/
+.welcome-sec{
+    background-image: url('main.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.welcome-sec .text{
+    color: white;
+    text-align: center;
+}
+
+.text h1{
+    font-size: 60px;
+    margin-top: 100px;
+    font-family: 'dancing script';
+}
+
+.text p{
+    font-size: 24px;
+    max-width: 700px;
+    margin-top: 100px;
+}
+
+
+/* ikinci alan */
+
+#about{
+    min-height: 100vh;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    gap: 100px;
+}
+
+#about img{
+    max-width: 600px;
+    max-height: 600px;
+
+}
+
+
+#about .about-text{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    gap: 30px;
+
+}
+
+.about-text h1 {
+    font-size: 50px;
+    font-family:'dancing script' ;
+}
+.about-text p {
+    font-size: 18px;
+}
+
+
+#req-sec{
+    background-image: radial-gradient(
+        circle,
+        rgba(0, 0, 0, 0.287) 0,
+        black 80%
+      ),
+      url(/sec-2.jpg);
+    color: white;
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+
+.head{
+    text-align: center;
+}
+.head h5{
+   font-size: 24px;
+}
+ 
+.head  nav h1{
+  font-size: 70px;
+}
+
+
+.boxes{
+    width: 600px;
+    margin: 100px auto;
+    
+    flex-wrap: wrap;
+    display: flex;
+}
+
+.box{
+    width: 50%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 2.2px solid rgb(250, 230, 230);
+    padding: 10px;
+
+}
+
+.box h1{
+    color: red;
+    font-size: 20px;
+}
+
+
+.boxes .box:last-child{
+    width: 100%;
+}
+@media(max-width:1200px){
+    #about{
+        flex-direction: column;
+    }
+    #about img{
+        width: 100%;
+    }
+
+    #welcome-sec{
+        padding: 50px;
+    }
+    .text h1{
+        font-size: 40px;
+    
+    }
+
+    .text p{
+        font-size: 20px;
+    }
+    #header img{
+        width: 101px;
+    }
+    #header{
+        padding: 20px;
+    }
+  
+   #req-sec .head nav h1{
+   font-size: 40px;
+   }
+   #req-sec .head h5 {
+   font-size: 15px;
+   }
+   .boxes {
+    width: 100%;
+    height: unset;
+  }
+
+  .boxes .box {
+    width: 100%;
+    padding: 30px;
+    height: unset;
+  }
+    
+}
+
